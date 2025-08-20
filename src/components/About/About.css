@@ -1,0 +1,39 @@
+.about{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+.about-title{
+  text-align: center;
+  margin: 0 0 1.25rem;
+  font-size: var(--h2);
+  font-weight: 800;
+}
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem; /* a touch more air */
+}
+.about-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.1rem 1.0rem;
+  color: var(--text);
+  transition: transform 160ms ease, filter 160ms ease, background 160ms ease;
+}
+.about-card:hover,
+.about-card:focus-within{
+  transform: translateY(-2px);
+  filter: saturate(1.03);
+  background: var(--panel-hover);
+  outline: none;
+}
+.about-card-title{
+  margin: 0 0 .6rem;
+  font-size: var(--h3);
+  color: var(--heading);
+}
+@media (max-width: 820px){
+  .about-grid{ grid-template-columns: 1fr; }
+}

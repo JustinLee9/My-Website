@@ -1,0 +1,76 @@
+.hero .hero-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0 0 0.9rem;
+    font-size: var(--h1);
+    font-weight: 800;
+    line-height: 1.15;
+}
+.hero h1 span {
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero .hero-sub {
+    margin: 0 0 1.5rem;
+    font-size: 1.05rem;
+    color: var(--text);
+    opacity: 0.9;
+}
+.hero .hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.hero .hero-links li {
+    display: inline-flex;
+}
+.hero .hero-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: var(--pill-radius);
+    background: var(--chip);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 180ms ease, background 180ms ease, filter 180ms ease;
+    will-change: transform;
+}
+.hero .hero-links a:hover,
+.hero .hero-links a:focus-visible {
+    transform: translateY(-2px);
+    background: var(--panel-hover);
+    filter: saturate(1.05);
+}
+.hero .hero-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    color: var(--text);
+}
+.hero .hero-link-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+    .hero .hero-sub {
+        font-size: 0.98rem;
+    }
+}
