@@ -1,4 +1,3 @@
-// Navbar.js
 import { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 
@@ -8,7 +7,6 @@ export default function Navbar() {
   const sectionsRef = useRef([]);
 
   const items = [
-    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
@@ -43,7 +41,6 @@ export default function Navbar() {
         }
       },
       {
-        // Trigger when ~35% of a section is visible, with a top offset for the navbar
         rootMargin: `-${parseInt(getComputedStyle(document.documentElement)
                       .getPropertyValue('--navbar-h')) + 16}px 0px -40% 0px`,
         threshold: [0.35, 0.6, 0.9],

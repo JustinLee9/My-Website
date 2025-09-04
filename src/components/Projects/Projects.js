@@ -1,6 +1,8 @@
 import "./Projects.css";
 import project1 from "../../assets/project1-image.png";
+import project2 from "../../assets/project2-image.png";
 import project3 from "../../assets/project3-image.png";
+import project4 from "../../assets/project4-image.png";
 
 const Projects = () => {
     const projects = [
@@ -17,7 +19,7 @@ const Projects = () => {
             title: "Community Housing App",
             description: "A web app that allows users to manage shared housing tasks, schedules, and meal planning with GPT integration, Postgres backend, and Auth0 authentication.",
             languages: ["Python", "HTML", "JavaScript", "Flask", "Postgres", "Auth0", "GPT API"],
-            thumbnail: "https://via.placeholder.com/300x180",
+            thumbnail: project2,
             link: "https://github.com/JustinLee9/Community-Housing-App",
         },
         {
@@ -30,11 +32,11 @@ const Projects = () => {
         },
         {
             id: 4,
-            title: "Project Four",
-            description: "Placeholder",
-            languages: ["Placeholder"],
-            thumbnail: "https://via.placeholder.com/300x180",
-            link: "https://example.com",
+            title: "Fake News Detection",
+            description: "Machine learning model that identifies fake news articles with 100% accuracy using text analysis and logistic regression",
+            languages: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Google Colab", "Jupyter Notebook"],
+            thumbnail: project4,
+            link: "https://github.com/JustinLee9/Real-and-Fake-News-Detection",
         },
     ];
 
