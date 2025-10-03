@@ -24,8 +24,8 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: "Todo App",
-            description: "A full-stack Todo application built with React, Netlify Functions, and MongoDB. Supports adding, editing, marking complete, and viewing completed todos separately.",
+            title: "Task Manager",
+            description: "A full-stack Task manager built with React, Netlify Functions, and MongoDB. Supports adding, editing, marking complete, and viewing completed todos separately.",
             languages: ["React", "Node.js", "MongoDB", "Netlify Functions", "CSS Modules"],
             thumbnail: project3,
             link: "https://github.com/JustinLee9/Todo-List",
