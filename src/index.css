@@ -1,4 +1,4 @@
-:root{
+:root {
   /* Palette */
   --bg: #0a0a0c;
   --panel: #0f0f10;
@@ -7,15 +7,15 @@
   --text: #eaeaea;
   --muted: #cfcfcf;
   --heading: #ffffff;
-  --border: rgba(255,255,255,0.10);
-  --border-soft: rgba(255,255,255,0.06);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-soft: rgba(255, 255, 255, 0.06);
 
   /* Accents */
   --accent-grad: linear-gradient(270deg, #350068 10%, #FF6978 100%);
   --lang: #5ac8fa;
   --frameworks: #ffd073;
+  --databases: #b388ff;
   --tools: #a5ff8a;
-  --libs: #b388ff;
 
   /* Layout */
   --container: 1200px;
@@ -26,25 +26,33 @@
   --pill-radius: 999px;
 
   /* Type */
-  --h1: clamp(2.2rem, 5vw, 2.75rem);  /* Hero name */
-  --h2: clamp(1.4rem, 3vw, 1.6rem);   /* Section titles */
-  --h3: 1.1rem;                       /* Card / subsection titles */
-  --body-lg: 1.05rem;                 /* Hero subtitle */
-  --body: 1rem;                       /* Default text */
-  --body-sm: 0.9rem;                  /* Card text, project descriptions */
+  --h1: clamp(2.2rem, 5vw, 2.75rem);
+  /* Hero name */
+  --h2: clamp(1.4rem, 3vw, 1.6rem);
+  /* Section titles */
+  --h3: 1.1rem;
+  /* Card / subsection titles */
+  --body-lg: 1.05rem;
+  /* Hero subtitle */
+  --body: 1rem;
+  /* Default text */
+  --body-sm: 0.9rem;
+  /* Card text, project descriptions */
   --caption: 0.8rem;
 }
 
 *,
 *::before,
-*::after{ box-sizing: border-box; }
+*::after {
+  box-sizing: border-box;
+}
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--navbar-h) + 12px);
 }
 
-body{
+body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -53,33 +61,43 @@ body{
 }
 
 /* Sections */
-section{
+section {
   padding-block: var(--section-gap-lg);
 }
-section + section{
+
+section+section {
   margin-top: var(--section-gap-lg);
 }
-@media (max-width: 700px){
-  section{ padding-block: var(--section-gap-sm); }
-  section + section{ margin-top: var(--section-gap-sm); }
+
+@media (max-width: 700px) {
+  section {
+    padding-block: var(--section-gap-sm);
+  }
+
+  section+section {
+    margin-top: var(--section-gap-sm);
+  }
 }
 
 /* First section */
-section:first-of-type{
+section:first-of-type {
   padding-top: calc(var(--section-gap-lg) + 0.75rem);
 }
 
-.container{
+.container {
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 1.25rem;
 }
 
 /* Headings normalization */
-section h1, section h2{ margin-top: 0; }
+section h1,
+section h2 {
+  margin-top: 0;
+}
 
 /* Accessible focus ring across the site */
-:where(a, button, [tabindex]:not([tabindex="-1"])):focus-visible{
+:where(a, button, [tabindex]:not([tabindex="-1"])):focus-visible {
   outline: 2px solid #FF6978;
   outline-offset: 2px;
   border-radius: 10px;

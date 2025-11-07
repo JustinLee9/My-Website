@@ -56,8 +56,8 @@
 /* Category borders */
 .skills-lang{ border-color: var(--lang); }
 .skills-frameworks{ border-color: var(--frameworks); }
+.skills-databases{ border-color: var(--databases); }
 .skills-tools{ border-color: var(--tools); }
-.skills-libs{ border-color: var(--libs); }
 
 @media (max-width: 480px){
   .skills-card{ padding: .85rem; }

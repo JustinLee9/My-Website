@@ -9,7 +9,11 @@ const OVERRIDES = {
   "Microsoft Azure": "microsoftazure",
   "Scikit-learn": "scikitlearn",
   NumPy: "numpy",
+  "Next.js": "nextdotjs",
+  "Node.js": "nodedotjs",
+  "TanStack Query": "reactquery",
 };
+
 function slugify(name) {
   return (
     OVERRIDES[name] ||
@@ -18,10 +22,10 @@ function slugify(name) {
 }
 
 const CATEGORIES = [
-  { title: "Languages", className: "skills-lang", items: ["Python", "Java", "C", "JavaScript", "TypeScript", "HTML", "CSS", "SQL", "R"] },
-  { title: "Frameworks", className: "skills-frameworks", items: ["React", "Auth0", "Flask"] },
-  { title: "Tools & Platforms", className: "skills-tools", items: ["Git", "Linux", "MongoDB", "Microsoft Azure"] },
-  { title: "Libraries", className: "skills-libs", items: ["NumPy", "Pandas", "Matplotlib", "Scikit-learn"] },
+  { title: "Languages", className: "skills-lang", items: ["JavaScript", "TypeScript", "Python", "Java", "HTML", "CSS", "SQL", "C"] },
+  { title: "Frontend & Backend", className: "skills-frameworks", items: ["React", "Next.js", "Tailwind CSS", "TanStack Query", "Node.js", "Express", "NestJS", "Flask"] },
+  { title: "Databases & Cloud", className: "skills-databases", items: ["MongoDB", "PostgreSQL", "Firebase", "Microsoft Azure", "Vercel", "Netlify"] },
+  { title: "Tools & Libraries", className: "skills-tools", items: ["Git", "Linux", "Auth0", "NumPy", "Pandas", "Matplotlib", "Scikit-learn", "Papa Parse"] },
 ];
 
 function pill(name) {
