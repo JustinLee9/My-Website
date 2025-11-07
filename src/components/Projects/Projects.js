@@ -32,11 +32,11 @@ const Projects = () => {
         },
         {
             id: 4,
-            title: "Fake News Detection",
-            description: "Machine learning model that identifies fake news articles with 100% accuracy using text analysis and logistic regression",
-            languages: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Google Colab", "Jupyter Notebook"],
+            title: "Movie Search Platform",
+            description: "Full-stack application with NestJS backend and Next.js frontend, featuring OMDb API integration, favorites management, and efficient data caching with TanStack Query",
+            languages: ["Next.js", "NestJS", "TypeScript", "TanStack Query", "OMDb API"],
             thumbnail: project4,
-            link: "https://github.com/JustinLee9/Real-and-Fake-News-Detection",
+            link: "https://github.com/JustinLee9/Movie-Search-App",
         },
     ];
 
